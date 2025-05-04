@@ -1,0 +1,286 @@
+
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+            background: linear-gradient(to right, #28a745, #a8e6a3);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #cdeccd;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            background-color: #ffffff;
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .summary {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            font-size: 13px;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 2px 4px;
+            border-bottom: 1px solid #eee;
+        }
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            background-color: #d4edda;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+<h1>Data Cleaning</h1>
+<div class="grid-container">
+
+        <div class="card">
+            <h3>Project Code</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Project_Code_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 139<br>
+                <b>Examples:</b><br>
+                <table><tr><td>116-ZA-T30</td></tr><tr><td>104-CI-T30</td></tr><tr><td>114-UG-T30</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Country</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Country_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 43<br>
+                <b>Examples:</b><br>
+                <table><tr><td>South Africa</td></tr><tr><td>Côte d'Ivoire</td></tr><tr><td>Nigeria</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Managed By</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Managed_By_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 4<br>
+                <b>Examples:</b><br>
+                <table><tr><td>PMO - US</td></tr><tr><td>South Africa Field Office</td></tr><tr><td>Haiti Field Office</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Fulfill Via</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Fulfill_Via_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 2<br>
+                <b>Examples:</b><br>
+                <table><tr><td>Direct Drop</td></tr><tr><td>From RDC</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Shipment Mode</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Shipment_Mode_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 5<br>
+                <b>Examples:</b><br>
+                <table><tr><td>Air</td></tr><tr><td>Truck</td></tr><tr><td>Air Charter</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Scheduled Delivery Date</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Scheduled_Delivery_Date_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 1896<br>
+                <b>Examples:</b><br>
+                <table><tr><td>29-Aug-14</td></tr><tr><td>16-Mar-12</td></tr><tr><td>27-Aug-14</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Delivered to Client Date</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Delivered_to_Client_Date_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 1983<br>
+                <b>Examples:</b><br>
+                <table><tr><td>29-Aug-14</td></tr><tr><td>27-Aug-14</td></tr><tr><td>16-Apr-13</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Product Group</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Product_Group_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 5<br>
+                <b>Examples:</b><br>
+                <table><tr><td>ARV</td></tr><tr><td>HRDT</td></tr><tr><td>ANTM</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Sub Classification</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Sub_Classification_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 6<br>
+                <b>Examples:</b><br>
+                <table><tr><td>Adult</td></tr><tr><td>Pediatric</td></tr><tr><td>HIV test</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Vendor</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Vendor_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 72<br>
+                <b>Examples:</b><br>
+                <table><tr><td>SCMS from RDC</td></tr><tr><td>S. BUYS WHOLESALER</td></tr><tr><td>Orgenics, Ltd</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Item Description</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Item_Description_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 181<br>
+                <b>Examples:</b><br>
+                <table><tr><td>Efavirenz 600mg, tablets, 30 Tabs</td></tr><tr><td>Nevirapine 200mg, tablets, 60 Tabs</td></tr><tr><td>HIV 1/2, Determine Complete HIV Kit, 100 Tests</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Molecule/Test Type</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Molecule_Test_Type_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 85<br>
+                <b>Examples:</b><br>
+                <table><tr><td>Efavirenz</td></tr><tr><td>Nevirapine</td></tr><tr><td>Lamivudine</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Brand</h3>
+            <p><span class="badge">Text</span></p>
+            <img src="column_plots\Brand_plot.png">
+            <div class="summary">
+                <b>Unique:</b> 48<br>
+                <b>Examples:</b><br>
+                <table><tr><td>Generic</td></tr><tr><td>Determine</td></tr><tr><td>Uni-Gold</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Line Item Quantity</h3>
+            <p><span class="badge">Number</span></p>
+            <img src="column_plots\Line_Item_Quantity_plot.png">
+            <div class="summary">
+                <br>
+                <b>Examples:</b><br>
+                <table><tr><td>Min: 1</td></tr><tr><td>Max: 178097</td></tr><tr><td>Mean: 6293.05</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Line Item Value</h3>
+            <p><span class="badge">Number</span></p>
+            <img src="column_plots\Line_Item_Value_plot.png">
+            <div class="summary">
+                <br>
+                <b>Examples:</b><br>
+                <table><tr><td>Min: 0.0</td></tr><tr><td>Max: 409822.74</td></tr><tr><td>Mean: 54497.07</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Pack Price</h3>
+            <p><span class="badge">Number</span></p>
+            <img src="column_plots\Pack_Price_plot.png">
+            <div class="summary">
+                <br>
+                <b>Examples:</b><br>
+                <table><tr><td>Min: 0.0</td></tr><tr><td>Max: 1345.64</td></tr><tr><td>Mean: 23.85</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Unit Price</h3>
+            <p><span class="badge">Number</span></p>
+            <img src="column_plots\Unit_Price_plot.png">
+            <div class="summary">
+                <br>
+                <b>Examples:</b><br>
+                <table><tr><td>Min: 0.0</td></tr><tr><td>Max: 238.65</td></tr><tr><td>Mean: 0.64</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Weight (Kilograms)</h3>
+            <p><span class="badge">Number</span></p>
+            <img src="column_plots\Weight__Kilograms__plot.png">
+            <div class="summary">
+                <br>
+                <b>Examples:</b><br>
+                <table><tr><td>Min: 0.0</td></tr><tr><td>Max: 2870.0</td></tr><tr><td>Mean: 875.06</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Freight Cost (USD)</h3>
+            <p><span class="badge">Number</span></p>
+            <img src="column_plots\Freight_Cost__USD__plot.png">
+            <div class="summary">
+                <br>
+                <b>Examples:</b><br>
+                <table><tr><td>Min: 0.75</td></tr><tr><td>Max: 124350.84</td></tr><tr><td>Mean: 6118.24</td></tr></table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Line Item Insurance (USD)</h3>
+            <p><span class="badge">Number</span></p>
+            <img src="column_plots\Line_Item_Insurance__USD__plot.png">
+            <div class="summary">
+                <br>
+                <b>Examples:</b><br>
+                <table><tr><td>Min: 0.0</td></tr><tr><td>Max: 864.12</td></tr><tr><td>Mean: 84.33</td></tr></table>
+            </div>
+        </div>
+        </div></body></html>
